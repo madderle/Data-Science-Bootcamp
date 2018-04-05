@@ -5,7 +5,7 @@ services:
     analytics:
       build:
         context: .
-      container_name: data_proj_01
+      container_name: ${PROJECT_NAME}
       ports:
         - "7788:7788"
       volumes:
