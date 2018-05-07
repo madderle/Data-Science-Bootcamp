@@ -1,0 +1,11 @@
+version : '2'
+
+services:
+    spark:
+      build:
+        context: .
+      container_name: spark_01
+      ports:
+        - "7788:7788"
+      volumes:
+        - ./src:/home/ds
